@@ -22,7 +22,7 @@ function ProfilePane() {
             <About />
           </Row>
           <Row className="">
-            <Col>
+            <Col className="profile-links text-center">
           <a className="social-links " href="https://www.linkedin.com/in/sal-gonzalez-1988567a/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
           <a className="social-links" href="https://github.com/SalGonzalez151"><FontAwesomeIcon icon={faGithub} /></a>
           </Col>

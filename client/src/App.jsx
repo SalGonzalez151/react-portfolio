@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { Container, Image, Row, Col } from 'react-bootstrap';
+import Portfolio from './components/portfolio/Portfolio.jsx'
 import './App.css'
 
 function App() {
@@ -33,8 +34,10 @@ function App() {
                 <Tab eventKey="home" title="Home">
                   Tab content for Home
                 </Tab>
-                <Tab eventKey="profile" title="Profile">
-                  Tab content for Profile
+                <Tab eventKey="Portfolio" title="Portfolio">
+                   <Portfolio />
+
+                  
                 </Tab>
                 <Tab eventKey="contact" title="Contact" disabled>
                   Tab content for Contact
