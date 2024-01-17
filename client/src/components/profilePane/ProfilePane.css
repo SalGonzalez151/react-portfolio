@@ -1,5 +1,16 @@
 .avatar-image {
-    max-width: 25%;
+    max-width: 40%;
+    margin: auto;
     
+}
+
+.profile-column {
+    border-style:solid;
+    border-color: lightgray;
+    border-width: 1px;
+    box-shadow: 1px 1px gray;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: white;
     
 }

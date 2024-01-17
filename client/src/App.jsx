@@ -13,40 +13,41 @@ function App() {
   return (
     <div>
       <Header />
-      <Container>
+      <Container className="app-container">
         <Row>
-          <Col>
+          <Col className="col-4">
             <Row>
               <ProfilePane />
             </Row>
-            
+
           </Col>
           <Col>
             <Row>
-            <Tabs
-            
-      id="controlled-tab-example"
-      activeKey={key}
-      onSelect={(k) => setKey(k)}
-      className="mb-3"
-    >
-      <Tab eventKey="home" title="Home">
-        Tab content for Home
-      </Tab>
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
-      </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
-        Tab content for Contact
-      </Tab>
-    </Tabs>
+              <Tabs
+
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+                className="mb-3"
+              >
+                <Tab eventKey="home" title="Home">
+                  Tab content for Home
+                </Tab>
+                <Tab eventKey="profile" title="Profile">
+                  Tab content for Profile
+                </Tab>
+                <Tab eventKey="contact" title="Contact" disabled>
+                  Tab content for Contact
+                </Tab>
+              </Tabs>
             </Row>
-           
+
           </Col>
         </Row>
+        <Footer />
       </Container>
 
-      <Footer />
+      
     </div>
   )
 }

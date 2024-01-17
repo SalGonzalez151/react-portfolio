@@ -5,7 +5,7 @@ import './resume.css'
 
 function Resume() {
     return (
-        <Container className="text-center">
+        <Container className="">
             <Col>
                 <h3>Skills</h3>
                 <ul>
