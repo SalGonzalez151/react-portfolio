@@ -10,24 +10,25 @@ function Portfolio() {
   return (
     <Container>
       <h3>Current Projects:</h3>
-      <Col>
-        <CardGroup>
-        <Card style={{ width: '18rem' }}>
+      <Row>
+        
+          <Col>
+        <Card /*style={{ width: '18rem' }}*/>
           <Card.Img variant="top" src={WeatherApp} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Weather App</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+             A weather app that gets the 5 day forecast. uses JavaScript, a weather api, and localstorage to save the search history.
             </Card.Text>
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </Card>
-      
-          <Card style={{ width: '18rem' }}>
+        </Col>
+        <Col>
+          <Card /*style={{ width: '18rem' }}*/>
             <Card.Img variant="top" src={Techblog} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>TechBlog</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
@@ -35,12 +36,12 @@ function Portfolio() {
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
-        
-        
-          <Card style={{ width: '18rem' }}>
+          </Col>
+        <Col>
+          <Card /*style={{ width: '18rem' }}*/>
             <Card.Img variant="top" src={AnyYes} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>AnyYes</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
@@ -48,9 +49,9 @@ function Portfolio() {
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
+          </Col>
         
-        </CardGroup>
-      </Col>
+        </Row>
     </Container>
   )
 }

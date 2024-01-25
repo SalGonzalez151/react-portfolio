@@ -1,26 +1,58 @@
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import './header.css'
+import { Link, useLocation } from 'react-router-dom';
+// import './header.css'
+
 
 function Header() {
-    return (
-        <>
-            <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
-                <Container>
-                    <Navbar.Brand> Sal Gonzalez </Navbar.Brand>
-                    <Nav className="me-auto nav-bar" >
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse className="basic-navbar-nav">
-                            <Nav.Link href="#aboutme">About Me</Nav.Link>
-                            <Nav.Link href="#resume">Resume</Nav.Link>
-                            <Nav.Link href="#contactme">Contact Me</Nav.Link>
-                        </Navbar.Collapse>
-                    </Nav>
-                </Container>
-            </Navbar>
-        </>
-    )
+  const currentPage = useLocation().pathname;
+ 
+  return (
+    <>
+      <Nav variant='tabs'>
+        <Nav.Item>
+          <Nav.Link href="/" active={currentPage === '/'}
+          >Home
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Portfolio" active={currentPage === '/Portfolio'}
+          >Portfolio
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/ContactMe" active={currentPage === '/ContactMe'}
+          >Contact
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+      {/* <ul className='nav nav-tabs'>
+                <li className='nav-item'>
+                    <Link
+                    to='/'
+                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
+                </li>
+                <li className='nav-item'>
+                    <Link 
+                    to='/Portfolio'
+                    className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
+                    Portfolio
+                    </Link>
+                    </li>
+                  
+                <li className='nav-item'>
+                <Link
+                to='/ContactMe'
+                className={currentPage === '/ContactMe' ? 'nav-link active' : 'nav-link'}>
+                   Contact
+                  </Link>
+                  </li>
+                </ul> */}
+
+
+
+    </>
+  )
 }
 
 export default Header

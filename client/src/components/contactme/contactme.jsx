@@ -17,9 +17,9 @@ function ContactMe() {
         
         <Form >
           <Container className="container-contact">
-          <h4 className="contact-me">Contact Me</h4>
+          <p className="contact-me">Totally not a robot </p>
             <Row className="contact-form">
-              <Col xs={12} md={6}>
+              <Col >
                 <InputGroup className="mb-3">
                   <InputGroup.Text id="basic-addon2">Name</InputGroup.Text>
                   <Form.Control
@@ -33,7 +33,7 @@ function ContactMe() {
             </Row>
   
             <Row className="contact-form">
-              <Col xs={12} md={6}>
+              <Col >
                 <InputGroup className="mb-3">
                   <InputGroup.Text id="basic-addon1">Email</InputGroup.Text>
                   <Form.Control
@@ -48,8 +48,8 @@ function ContactMe() {
             </Row>
   
             <Row className="contact-form">
-              <Col xs={12} md={6}>
-                <InputGroup>
+              <Col >
+                <InputGroup className="mb-3">
                   <InputGroup.Text>Message</InputGroup.Text>
                   <Form.Control
                     name="message"
