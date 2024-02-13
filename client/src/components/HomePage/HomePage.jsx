@@ -6,7 +6,7 @@ export default function HomePage() {
     return (
         <Container>
       <div id="Home-Page">
-        <h1 className="mt-3">This is a Home Page</h1>
+        <p className="mt-3">Hello and welcome! feel free to look around and contact me for any collaborations</p>
         
       </div>
       </Container>
