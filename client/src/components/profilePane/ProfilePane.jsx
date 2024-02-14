@@ -4,7 +4,7 @@ import Resume from '../resume/resume.jsx'
 import avatar from '../../assets/test-avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import './profilePane.css'
+import './ProfilePane.css'
 import { Container, Image, Row, Col } from 'react-bootstrap';
 
 function ProfilePane() {
